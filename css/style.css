@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    color: #595959;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button:hover {
+    background: #1890ff;
+    border: 1px solid #1890ff;
+    color: #fff;
+}
+
+.button-primary {
+    background: #1890ff;
+    border: 1px solid #1890ff;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.button-primary:hover {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    color: #595959;
+}
+
+.button-icon {
+    margin-right: 6px;
+}
+
+.button-card-text {
+    margin-right: 10px;
+}
+
+.button-auth {
+    background-position: 20px 13px;
+}
+
+.button-cart {
+    display: none;
+    margin: 0 5px;
+}
+
+.button-out {
+    display: none;
+    margin: 0 5px;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    flex-basis: 31%;
+    text-decoration: none;
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 20px 23px 35px;
+    min-height: 275px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: normal;
+}
+
+.card-title-reg {
+    font-weight: 400;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: normal;
+}
+
+.card-buttons {
+    display: flex;
+    margin-top: 24px;
+    flex-grow: 1;
+    align-items: flex-end;
+}
+
+.card-price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 30px;
+}
+
+.ingredients {
+    color: #8c8c8c;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 960px;
+    }
+}
